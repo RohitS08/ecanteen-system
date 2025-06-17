@@ -129,7 +129,7 @@ export default function OrderTable() {
   const { user } = useUser();
   const url = import.meta.env.VITE_PROD
     ? import.meta.env.VITE_API_URL
-    : 'http://localhost:3001';
+    : 'http://localhost:3002';
   React.useEffect(() => {
     const fetchOrders = async () => {
       if (!user) return;
