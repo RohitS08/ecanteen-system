@@ -99,9 +99,7 @@ export default function Cart() {
       gmailAccount,
     };
 
-    const url = import.meta.env.PROD
-      ? import.meta.env.VITE_API_URL
-      : 'http://localhost:3001';
+    const url = import.meta.env.VITE_API_URL;
 
     try {
       const res = await fetch(`${url}/api/auth/addOrder`, {
