@@ -127,7 +127,7 @@ function OrderRow({ order, onStatusUpdate }) {
 export default function OrderTable() {
   const [orders, setOrders] = React.useState([]);
   const { user } = useUser();
-  const url = import.meta.env.PROD
+  const url = import.meta.env.VITE_PROD
     ? import.meta.env.VITE_API_URL
     : 'http://localhost:3001';
   React.useEffect(() => {
